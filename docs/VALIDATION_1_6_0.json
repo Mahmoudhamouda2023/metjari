@@ -1,0 +1,26 @@
+{
+  "release": "1.6.0",
+  "date": "2026-11-05",
+  "environment": "PHP 8.5.12 WebAssembly; SQLite :memory:",
+  "phpunit": {
+    "tests": 153,
+    "assertions": 1051,
+    "errors": 0,
+    "failures": 0
+  },
+  "javascript": {
+    "tests": 16,
+    "passed": 16
+  },
+  "syntax": {
+    "counts": {
+      "source": 147,
+      "compiled": 86
+    },
+    "errors": []
+  },
+  "limits": [
+    "No native MySQL execution in this release run.",
+    "No graphical browser was available for visual layout verification."
+  ]
+}

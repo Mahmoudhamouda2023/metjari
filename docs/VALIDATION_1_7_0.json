@@ -1,0 +1,138 @@
+{
+  "release": "1.7.0",
+  "date": "2026-11-09",
+  "base_release": "1.6.0",
+  "phpunit": {
+    "tests": 159,
+    "assertions": 1113,
+    "errors": 0,
+    "failures": 0,
+    "environment": "PHP 8.5.12 WebAssembly; SQLite in memory"
+  },
+  "javascript": {
+    "tests": 20,
+    "passed": 20
+  },
+  "browser_scenarios": [
+    {
+      "name": "dark inputs are readable in login, merchant and admin remittance pages",
+      "passed": true
+    },
+    {
+      "name": "light input appearance remains unchanged",
+      "passed": true
+    },
+    {
+      "name": "captain remittance AJAX submits once and updates the table without navigating",
+      "passed": true
+    },
+    {
+      "name": "failed-delivery AJAX displays fee only and reinitializes the next action form",
+      "passed": true
+    },
+    {
+      "name": "validation failure preserves entered values and does not refresh or repeat the write",
+      "passed": true
+    },
+    {
+      "name": "uncertain remittance result reads current state without replaying the POST",
+      "passed": true
+    },
+    {
+      "name": "sound defaults on, mute survives reload, and unmute survives reload",
+      "passed": true
+    },
+    {
+      "name": "separate admin pages and mobile merchant menu render without horizontal overflow",
+      "passed": true
+    }
+  ],
+  "browser_test_method": "Laravel-generated HTML with fixture-controlled responses; backend controllers independently tested with PHPUnit.",
+  "syntax": {
+    "counts": {
+      "source": 152,
+      "compiled": 86
+    },
+    "errors": []
+  },
+  "scope": {
+    "unchanged_protected_files": [
+      "app/Services/Delivery/Audit.php",
+      "app/Services/Delivery/Finance.php",
+      "app/Services/Delivery/FinancialBatches.php",
+      "app/Services/Delivery/Loyalty.php",
+      "app/Services/Delivery/Money.php",
+      "app/Services/Delivery/OperationReference.php",
+      "app/Services/Delivery/OrderActions.php",
+      "app/Services/Delivery/OrderNotifications.php",
+      "app/Services/Delivery/OrderSchedule.php",
+      "app/Services/Delivery/OrderWorkflow.php",
+      "app/Services/Delivery/Payments.php",
+      "app/Services/Delivery/Pricing.php",
+      "app/Services/Delivery/Returns.php",
+      "app/Services/Delivery/StoreReference.php",
+      "config/auth.php",
+      "config/session.php",
+      "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "database/migrations/2026_10_24_000000_create_permission_tables.php",
+      "database/migrations/2026_10_24_000001_create_delivery_identity_tables.php",
+      "database/migrations/2026_10_24_000002_create_delivery_catalog.php",
+      "database/migrations/2026_10_24_000003_create_delivery_orders.php",
+      "database/migrations/2026_10_24_000004_create_delivery_finance.php",
+      "database/migrations/2026_10_26_000005_add_store_delivery_features.php",
+      "database/migrations/2026_10_26_000006_normalize_local_phone_numbers.php",
+      "database/migrations/2026_11_01_000007_strengthen_finance_and_notifications.php",
+      "database/migrations/2026_11_02_000008_unify_order_references_and_notification_links.php",
+      "database/migrations/2026_11_04_000009_add_returns_and_loyalty.php",
+      "database/migrations/2026_11_04_000009_store_reference_codes.php",
+      "database/migrations/2026_11_04_000010_return_fee_receivables.php",
+      "database/migrations/2026_11_04_000011_order_origin.php",
+      "database/migrations/2026_11_04_000012_auto_operation_references.php",
+      "packages/delivery-foundation/.gitignore",
+      "packages/delivery-foundation/README_AR.md",
+      "packages/delivery-foundation/composer.json",
+      "packages/delivery-foundation/config/delivery-foundation.php",
+      "packages/delivery-foundation/database/migrations/2026_10_24_000001_create_delivery_identity_tables.php",
+      "packages/delivery-foundation/database/seeders/AccessControlSeeder.php",
+      "packages/delivery-foundation/docs/ACCESS_CONTROL_AR.md",
+      "packages/delivery-foundation/docs/COMPATIBILITY_AR.md",
+      "packages/delivery-foundation/docs/DATABASE_SCHEMA_AR.md",
+      "packages/delivery-foundation/docs/VALIDATION_AR.md",
+      "packages/delivery-foundation/phpunit.xml",
+      "packages/delivery-foundation/src/Console/BootstrapSuperAdmin.php",
+      "packages/delivery-foundation/src/Enums/AccountStatus.php",
+      "packages/delivery-foundation/src/Enums/StaffRole.php",
+      "packages/delivery-foundation/src/Enums/StoreStatus.php",
+      "packages/delivery-foundation/src/FoundationServiceProvider.php",
+      "packages/delivery-foundation/src/Http/Middleware/EnsureAccountIsActive.php",
+      "packages/delivery-foundation/src/Models/AccountAuditLog.php",
+      "packages/delivery-foundation/src/Models/CaptainProfile.php",
+      "packages/delivery-foundation/src/Models/Staff.php",
+      "packages/delivery-foundation/src/Models/Store.php",
+      "packages/delivery-foundation/src/Models/User.php",
+      "packages/delivery-foundation/src/Policies/StorePolicy.php",
+      "packages/delivery-foundation/src/Services/AuditRecorder.php",
+      "packages/delivery-foundation/src/Services/MerchantRegistration.php",
+      "packages/delivery-foundation/src/Services/StaffAccounts.php",
+      "packages/delivery-foundation/src/Services/StoreDirectory.php",
+      "packages/delivery-foundation/src/Services/StoreReview.php",
+      "packages/delivery-foundation/src/Support/PhoneNumber.php",
+      "packages/delivery-foundation/tests/AccessControlTest.php",
+      "packages/delivery-foundation/tests/IdentityTest.php",
+      "packages/delivery-foundation/tests/SessionBoundaryTest.php",
+      "packages/delivery-foundation/tests/TestCase.php",
+      "public/assets/app.css",
+      "resources/css/app.css",
+      "app/Services/Delivery/ServiceFees.php",
+      "database/migrations/2026_11_05_000013_separate_service_fee_collections.php"
+    ],
+    "added_packages": {
+      "laravel/breeze": "v2.4.2"
+    },
+    "changed_existing_package_versions": []
+  },
+  "limitations": [
+    "No run against the user MySQL database."
+  ]
+}
